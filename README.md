@@ -4,7 +4,7 @@ Rebuild of ljplumbheat.co.uk. Banbury trade site.
 
 ## Live
 
-- **GitHub Pages preview:** https://bigrocks67.github.io/lj-plumbing/
+- **Live:** https://www.ljplumbheat.co.uk
 - **Repo:** https://github.com/BIGROCKS67/lj-plumbing
 - Old WordPress still on `ljplumbheat.co.uk` until we flip DNS.
 
