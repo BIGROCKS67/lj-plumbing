@@ -11,7 +11,7 @@ export function CoverageMap() {
         className="object-cover object-[center_52%]"
         sizes="100vw"
       />
-      <p className="absolute bottom-2 right-3 text-[10px] text-ink/45">© OpenStreetMap</p>
+      <p className="absolute bottom-2 right-3 text-[10px] text-ink/40">© OpenStreetMap © Esri</p>
     </div>
   );
 }
