@@ -102,38 +102,3 @@ textarea {
   isolation: isolate;
   z-index: 0;
 }
-
-.lj-coverage-map .leaflet-container {
-  height: 100%;
-  width: 100%;
-  background: var(--paper);
-  font-family: inherit;
-}
-
-.lj-map-pin {
-  background: none;
-  border: 0;
-}
-
-.lj-map-pin-dot {
-  display: block;
-  width: 18px;
-  height: 18px;
-  border-radius: 999px;
-  background: var(--ice);
-  box-shadow: 0 0 0 6px rgb(46 181 232 / 28%), 0 0 0 2px #07090d;
-}
-
-.lj-map-pin-label {
-  position: absolute;
-  top: 22px;
-  left: 50%;
-  transform: translateX(-50%);
-  white-space: nowrap;
-  border-radius: 999px;
-  background: #07090d;
-  padding: 0.2rem 0.55rem;
-  font-size: 11px;
-  font-weight: 600;
-  color: #fff;
-}

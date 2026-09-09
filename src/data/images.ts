@@ -5,6 +5,7 @@ export const images = {
   logoDark: asset("/images/logo-dark.png"),
   hero: asset("/images/hero-vans.jpg"),
   heroAlt: asset("/images/work/kit.jpg"),
+  coverage: asset("/images/coverage-map.jpg"),
   work: {
     pipework: asset("/images/work/pipework.jpg"),
     install: asset("/images/work/install.jpg"),
