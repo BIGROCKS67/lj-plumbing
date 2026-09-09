@@ -7,7 +7,7 @@ import { premierProjects, type PremierProject } from "@/data/projects";
 const sections = [
   ["The brief", "brief"],
   ["The challenge", "challenge"],
-  ["The LJ solution", "solution"],
+  ["The L J solution", "solution"],
   ["Behind the walls", "behind"],
   ["The finish", "finish"],
 ] as const;

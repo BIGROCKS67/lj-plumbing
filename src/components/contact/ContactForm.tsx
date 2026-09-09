@@ -46,7 +46,7 @@ export function ContactForm() {
       <div className="border border-line bg-paper p-6 sm:p-8" role="status">
         <p className="font-display text-2xl text-ink">Thank you. Your enquiry has been sent.</p>
         <p className="mt-3 text-mute">
-          The LJ Plumbing & Heating team will reply to the details you provided.
+          The L J Plumbing and Heating Services team will reply to the details you provided.
         </p>
       </div>
     );
@@ -54,7 +54,7 @@ export function ContactForm() {
 
   return (
     <form onSubmit={onSubmit} action="https://formsubmit.co/info@ljplumbheat.co.uk" method="POST" className="space-y-4">
-      <input type="hidden" name="_subject" value="LJ Plumbing website enquiry" />
+      <input type="hidden" name="_subject" value="L J Plumbing website enquiry" />
       <input type="hidden" name="_captcha" value="false" />
       <input type="hidden" name="_template" value="table" />
       <input type="hidden" name="_next" value={nextUrl} />
@@ -153,7 +153,7 @@ export function ContactForm() {
           .
         </p>
       )}
-      <p className="text-sm text-mute">Your enquiry will be sent directly to the LJ Plumbing & Heating team.</p>
+      <p className="text-sm text-mute">Your enquiry will be sent directly to the L J Plumbing and Heating Services team.</p>
     </form>
   );
 }
@@ -164,7 +164,7 @@ export function ContactFacts({ heading = "Send a project brief." }: { heading?: 
       <p className="text-sm font-semibold text-ice-deep">Get in touch</p>
       <h2 className="font-display mt-3 text-4xl text-ink">{heading}</h2>
       <p className="mt-4 text-mute">
-        Need servicing or already an LJ or SMH customer? Call the team directly. For
+        Need servicing or already an L J or SMH customer? Call the team directly. For
         residential projects, schools and estate works, use the enquiry form and select
         the relevant service.
       </p>

@@ -9,7 +9,7 @@ import { premierProjects } from "@/data/projects";
 export const metadata: Metadata = {
   title: "Premier Projects",
   description:
-    "Detailed case studies of LJ Plumbing & Heating’s most significant work. Woodstock, Turweston House and Bloxham Road.",
+    "Detailed case studies of L J Plumbing and Heating Services’ most significant work. Woodstock, Turweston House and Bloxham Road.",
 };
 
 export default function ProjectsPage() {

@@ -18,15 +18,15 @@ export const servicePages: Record<string, ServicePageDetail> = {
     sections: [
       {
         title: "What the service includes",
-        text: "Complete room and home renovations where LJ Plumbing & Heating takes responsibility for the plumbing, heating and the finishing work the brief requires. Bathrooms, wet rooms, kitchens and wider renovation packages are planned and delivered as one coordinated programme.",
+        text: "Complete room and home renovations where L J Plumbing and Heating Services takes responsibility for the plumbing, heating and the finishing work the brief requires. Bathrooms, wet rooms, kitchens and wider renovation packages are planned and delivered as one coordinated programme.",
       },
       {
         title: "How the project is managed",
-        text: "The company walks the property, agrees the scope and sets a programme. Protection of the house, sequencing of trades and a single point of contact sit with LJ from first meeting through to handover.",
+        text: "The company walks the property, agrees the scope and sets a programme. Protection of the house, sequencing of trades and a single point of contact sit with L J from first meeting through to handover.",
       },
       {
         title: "Trades supplied and coordinated",
-        text: "LJ supplies and coordinates the trades a renovation needs. One company remains accountable, rather than the client managing a list of separate contractors.",
+        text: "L J supplies and coordinates the trades a renovation needs. One company remains accountable, rather than the client managing a list of separate contractors.",
       },
       {
         title: "Planning and technical preparation",
@@ -57,7 +57,7 @@ export const servicePages: Record<string, ServicePageDetail> = {
       },
       {
         title: "Trades supplied and coordinated",
-        text: "LJ supplies and coordinates the finishing trades a bathroom needs, including tiling and decoration where the project requires them. One company stays responsible for the finished room.",
+        text: "L J supplies and coordinates the finishing trades a bathroom needs, including tiling and decoration where the project requires them. One company stays responsible for the finished room.",
       },
       {
         title: "Planning and technical preparation",
@@ -84,11 +84,11 @@ export const servicePages: Record<string, ServicePageDetail> = {
       },
       {
         title: "How the project is managed",
-        text: "The system is scoped as one installation. Design, materials, first fix, second fix and commissioning stay with LJ, so the plant room and the finished rooms are delivered to the same standard.",
+        text: "The system is scoped as one installation. Design, materials, first fix, second fix and commissioning stay with L J, so the plant room and the finished rooms are delivered to the same standard.",
       },
       {
         title: "Trades supplied and coordinated",
-        text: "Where a heating project sits inside a wider renovation, LJ supplies and coordinates the trades the programme needs and remains the accountable company through to handover.",
+        text: "Where a heating project sits inside a wider renovation, L J supplies and coordinates the trades the programme needs and remains the accountable company through to handover.",
       },
       {
         title: "Planning and technical preparation",
@@ -121,7 +121,7 @@ export const schoolAssurance = [
   },
   {
     title: "Planned maintenance",
-    text: "Alongside project work, LJ provides planned plumbing and heating maintenance for schools and education estates.",
+    text: "Alongside project work, L J provides planned plumbing and heating maintenance for schools and education estates.",
   },
   {
     title: "Company and site information",

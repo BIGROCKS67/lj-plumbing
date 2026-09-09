@@ -1,23 +1,24 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { ChevronDown, Menu, Phone, X } from "lucide-react";
 import { Logo } from "@/components/brand/Logo";
-import { siteConfig } from "@/data/site";
+import { siteConfig, type NavItem } from "@/data/site";
 import { cn, telHref } from "@/lib/utils";
 
 export function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
-  const [projectsOpen, setProjectsOpen] = useState(false);
-  const [mobileProjects, setMobileProjects] = useState(false);
+  const [openDrop, setOpenDrop] = useState<string | null>(null);
+  const [mobileDrop, setMobileDrop] = useState<string | null>(null);
 
   useEffect(() => {
     setOpen(false);
-    setProjectsOpen(false);
-    setMobileProjects(false);
+    setOpenDrop(null);
+    setMobileDrop(null);
   }, [pathname]);
 
   useEffect(() => {
@@ -27,7 +28,9 @@ export function Header() {
     };
   }, [open]);
 
-  const onProjects = pathname.startsWith("/projects");
+  const itemActive = (item: NavItem) =>
+    pathname === item.href ||
+    ("children" in item && item.children?.some((child) => pathname === child.href));
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-ink pt-[env(safe-area-inset-top,0px)]">
@@ -48,44 +51,74 @@ export function Header() {
               <div
                 key={item.href}
                 className="relative"
-                onMouseEnter={() => setProjectsOpen(true)}
-                onMouseLeave={() => setProjectsOpen(false)}
+                onMouseEnter={() => setOpenDrop(item.href)}
+                onMouseLeave={() => setOpenDrop(null)}
               >
                 <button
                   type="button"
                   className={cn(
                     "inline-flex items-center gap-1 text-[13px] font-semibold transition-colors hover:text-ice",
-                    onProjects ? "text-ice" : "text-white/80"
+                    itemActive(item) ? "text-ice" : "text-white/80"
                   )}
-                  aria-expanded={projectsOpen}
+                  aria-expanded={openDrop === item.href}
                   aria-haspopup="true"
-                  onClick={() => setProjectsOpen((v) => !v)}
+                  onClick={() => setOpenDrop((v) => (v === item.href ? null : item.href))}
                 >
                   {item.label}
-                  <ChevronDown className={cn("h-3.5 w-3.5", projectsOpen && "rotate-180")} />
+                  <ChevronDown className={cn("h-3.5 w-3.5", openDrop === item.href && "rotate-180")} />
                 </button>
-                {projectsOpen && (
+                {openDrop === item.href && (
                   <div className="absolute left-0 top-full pt-3">
-                    <div className="min-w-[14rem] border border-white/10 bg-ink py-2 shadow-xl">
-                      <Link
-                        href={item.href}
-                        className="block px-4 py-2.5 text-sm font-semibold text-white/90 hover:bg-white/5 hover:text-ice"
-                      >
-                        All Premier Projects
-                      </Link>
-                      {item.children.map((child) => (
+                    {item.children.some((child) => child.image) ? (
+                      <div className="grid w-[36rem] grid-cols-3 gap-2 border border-white/10 bg-ink p-3 shadow-xl">
+                        {item.children.map((child) => (
+                          <Link
+                            key={child.href + child.label}
+                            href={child.href}
+                            className="group block"
+                          >
+                            {child.image && (
+                              <div className="relative aspect-[4/3] overflow-hidden bg-ink-soft">
+                                <Image
+                                  src={child.image}
+                                  alt={child.label}
+                                  fill
+                                  className="object-cover transition duration-500 group-hover:scale-105"
+                                  sizes="200px"
+                                />
+                              </div>
+                            )}
+                            <p className="mt-2 text-sm font-semibold text-white group-hover:text-ice">
+                              {child.label}
+                            </p>
+                            {child.line && (
+                              <p className="mt-0.5 text-xs text-white/55">{child.line}</p>
+                            )}
+                          </Link>
+                        ))}
+                      </div>
+                    ) : (
+                      <div className="min-w-[14rem] border border-white/10 bg-ink py-2 shadow-xl">
                         <Link
-                          key={child.href}
-                          href={child.href}
-                          className={cn(
-                            "block px-4 py-2.5 text-sm hover:bg-white/5 hover:text-ice",
-                            pathname === child.href ? "text-ice" : "text-white/75"
-                          )}
+                          href={item.href}
+                          className="block px-4 py-2.5 text-sm font-semibold text-white/90 hover:bg-white/5 hover:text-ice"
                         >
-                          {child.label}
+                          All {item.label}
                         </Link>
-                      ))}
-                    </div>
+                        {item.children.map((child) => (
+                          <Link
+                            key={child.href}
+                            href={child.href}
+                            className={cn(
+                              "block px-4 py-2.5 text-sm hover:bg-white/5 hover:text-ice",
+                              pathname === child.href ? "text-ice" : "text-white/75"
+                            )}
+                          >
+                            {child.label}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 )}
               </div>
@@ -148,23 +181,25 @@ export function Header() {
                   <button
                     type="button"
                     className="flex min-h-[3.25rem] w-full items-center justify-between text-lg font-semibold text-white"
-                    onClick={() => setMobileProjects((v) => !v)}
-                    aria-expanded={mobileProjects}
+                    onClick={() => setMobileDrop((v) => (v === item.href ? null : item.href))}
+                    aria-expanded={mobileDrop === item.href}
                   >
                     {item.label}
-                    <ChevronDown className={cn("h-5 w-5", mobileProjects && "rotate-180")} />
+                    <ChevronDown className={cn("h-5 w-5", mobileDrop === item.href && "rotate-180")} />
                   </button>
-                  {mobileProjects && (
+                  {mobileDrop === item.href && (
                     <div className="pb-3 pl-3">
-                      <Link
-                        href={item.href}
-                        className="flex min-h-[2.75rem] items-center text-base text-white/80"
-                      >
-                        All Premier Projects
-                      </Link>
+                      {!item.children.some((child) => child.href === item.href) && (
+                        <Link
+                          href={item.href}
+                          className="flex min-h-[2.75rem] items-center text-base text-white/80"
+                        >
+                          All {item.label}
+                        </Link>
+                      )}
                       {item.children.map((child) => (
                         <Link
-                          key={child.href}
+                          key={child.href + child.label}
                           href={child.href}
                           className="flex min-h-[2.75rem] items-center text-base text-white/80"
                         >

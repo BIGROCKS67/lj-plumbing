@@ -11,7 +11,7 @@ import { getService } from "@/data/services";
 export const metadata: Metadata = {
   title: "Complete renovations",
   description:
-    "Complete home and room renovations from first fix to final finish. Required trades supplied and coordinated by LJ Plumbing & Heating.",
+    "Complete home and room renovations from first fix to final finish. Required trades supplied and coordinated by L J Plumbing and Heating Services.",
 };
 
 export default function RenovationsPage() {

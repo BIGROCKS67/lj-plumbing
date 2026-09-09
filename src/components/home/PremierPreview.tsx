@@ -14,7 +14,7 @@ export function PremierPreview() {
           </h2>
           <p className="mt-5 max-w-xl text-mute">
             A closer look at the properties, challenges and technical details behind some
-            of LJ Plumbing & Heating’s most significant work.
+            of L J Plumbing and Heating Services’ most significant work.
           </p>
         </FadeIn>
         <div className="mt-12 grid gap-6 lg:grid-cols-3">

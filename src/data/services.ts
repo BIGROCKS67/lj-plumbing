@@ -16,7 +16,7 @@ export const services: Service[] = [
     href: "/renovations",
     title: "Complete renovations",
     line: "Coordinated delivery for substantial home and room renovation projects.",
-    body: "LJ Plumbing & Heating takes responsibility for complete renovations, not only the plumbing package. Planning, protection of the property, first and second fix, the required finishing trades and handover sit with one accountable company.",
+    body: "L J Plumbing and Heating Services takes responsibility for complete renovations, not only the plumbing package. Planning, protection of the property, first and second fix, the required finishing trades and handover sit with one accountable company.",
     points: [
       "Full-scale home and room renovations",
       "Required trades supplied and coordinated",
@@ -110,7 +110,7 @@ export const faqs = [
   },
   {
     q: "I used SMH Gas Specialist. Are you still there?",
-    a: "Yes. LJ Plumbing & Heating has acquired SMH Gas Specialist. Existing guarantees remain honoured, familiar faces remain involved, and Mark continues with the business. There is a dedicated page for SMH customers.",
+    a: "Yes. L J Plumbing and Heating Services has acquired SMH Gas Specialist. Existing guarantees remain honoured, familiar faces remain involved, and Mark continues with the business. There is a dedicated page for SMH customers.",
   },
   {
     q: "What areas do you cover?",
@@ -118,7 +118,7 @@ export const faqs = [
   },
   {
     q: "Do you supply the other trades?",
-    a: "LJ supplies and coordinates the trades a project requires, and remains accountable through to handover. Ask us what that includes on your brief.",
+    a: "L J supplies and coordinates the trades a project requires, and remains accountable through to handover. Ask us what that includes on your brief.",
   },
   {
     q: "Do you work with schools?",

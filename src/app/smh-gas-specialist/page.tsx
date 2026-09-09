@@ -8,7 +8,7 @@ import { siteConfig } from "@/data/site";
 export const metadata: Metadata = {
   title: "SMH Gas Specialist",
   description:
-    "SMH Gas Specialist is now part of LJ Plumbing & Heating. Existing SMH customers remain fully supported. Guarantees honoured. Mark continues with the business.",
+    "SMH Gas Specialist is now part of L J Plumbing and Heating Services. Existing SMH customers remain fully supported. Guarantees honoured. Mark continues with the business.",
 };
 
 const faqs = [
@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: "What changes for me as a customer?",
-    a: "You continue to receive personal, dependable service, now supported by LJ Plumbing & Heating’s larger team, wider service range and increased capacity.",
+    a: "You continue to receive personal, dependable service, now supported by L J Plumbing and Heating Services’ larger team, wider service range and increased capacity.",
   },
   {
     q: "Who should I contact now?",
@@ -34,8 +34,8 @@ export default function SmhPage() {
   return (
     <>
       <PageHero
-        title="SMH Gas Specialist is now part of LJ Plumbing & Heating"
-        lede="LJ Plumbing & Heating Services has officially acquired SMH Gas Specialist as Steve retires following an exceptional 50 years in the industry."
+        title="SMH Gas Specialist is now part of L J Plumbing and Heating Services"
+        lede="L J Plumbing and Heating Services has officially acquired SMH Gas Specialist as Steve retires following an exceptional 50 years in the industry."
         image={images.shots.plantRoom}
         imageAlt="Completed heating plant room, the standard of work that now supports SMH customers"
         imageFocus="object-[center_40%]"
@@ -58,14 +58,14 @@ export default function SmhPage() {
         </p>
         <h2 className="font-display mt-12 text-3xl text-ink">Continuity with added capability</h2>
         <p className="mt-4 text-mute">
-          By bringing SMH into LJ Plumbing & Heating, customers gain the support of a
+          By bringing SMH into L J Plumbing and Heating Services, customers gain the support of a
           larger team, a wider range of services and increased capacity, while retaining
           the honest advice, quality workmanship and attentive service they already know.
         </p>
         <h2 className="font-display mt-12 text-3xl text-ink">Carrying a trusted reputation forward</h2>
         <p className="mt-4 text-mute">
           SMH has been a trusted name across Banbury and the surrounding area for decades.
-          LJ Plumbing & Heating is proud to carry that reputation forward and thanks Steve
+          L J Plumbing and Heating Services is proud to carry that reputation forward and thanks Steve
           for his contribution to the industry, his customers and the local community
           throughout a 50-year career.
         </p>

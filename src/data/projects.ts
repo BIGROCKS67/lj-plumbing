@@ -46,7 +46,7 @@ export const premierProjects: PremierProject[] = [
     challenge:
       "Five rooms, five personalities, one property. Bold colour, patterned basins, rainforest tiling and a monochrome guest bathroom all had to sit on first-fix pipework that would never be seen again. The existing bathrooms were tired. The new work had to be precise enough for wall-hung sanitaryware, concealed cisterns and matching brassware throughout.",
     solution:
-      "LJ Plumbing & Heating took the bathrooms from first meeting through first fix to handover, working alongside Prosser Building on the wider renovation. Each room was specified as its own brief. Hansgrohe, Duravit, TECE and Tissino run through the project, with finishes changing from matt white to matt black to chrome so the rooms stay distinct.",
+      "L J Plumbing and Heating Services took the bathrooms from first meeting through first fix to handover, working alongside Prosser Building on the wider renovation. Each room was specified as its own brief. Hansgrohe, Duravit, TECE and Tissino run through the project, with finishes changing from matt white to matt black to chrome so the rooms stay distinct.",
     behind:
       "First-fix pipework, an unvented cylinder and underfloor heating were set out before finishes went on. Concealed frames, bottle traps and matching valves were coordinated room by room so the visible work could stay clean.",
     finish:
@@ -81,7 +81,7 @@ export const premierProjects: PremierProject[] = [
     challenge:
       "Listed fabric, existing structure and a finish that had to feel considered, not applied. Wall-mounted copper brassware, stone-effect basins, a freestanding bath and smart sanitaryware all needed to work in rooms with beams, shutters and original proportions. Access, protection and sequencing mattered as much as the specification.",
     solution:
-      "LJ Plumbing & Heating delivered the bathrooms from first fix to final polish, coordinating with Beasley Dickson Architects, Prosser Building, Impact Electrical and the bathroom suppliers. Rexa Design, Gessi, Bard & Brazier and Day True sit in the finished rooms. Heating was brought through the house with column radiators and valves matched to the joinery.",
+      "L J Plumbing and Heating Services delivered the bathrooms from first fix to final polish, coordinating with Beasley Dickson Architects, Prosser Building, Impact Electrical and the bathroom suppliers. Rexa Design, Gessi, Bard & Brazier and Day True sit in the finished rooms. Heating was brought through the house with column radiators and valves matched to the joinery.",
     behind:
       "Pipe runs, frames and plant were set out to protect the building. First-fix work is neat because the second fix has nowhere to hide on a listed job. Testing and commissioning happened before handover.",
     finish:
@@ -116,7 +116,7 @@ export const premierProjects: PremierProject[] = [
     challenge:
       "A whole-property system has to be invisible in the finished rooms and exact in the plant room. Underfloor heating across the house, designer radiators, a boost tank and smart controls all had to be commissioned as one installation, not a collection of extras.",
     solution:
-      "LJ Plumbing & Heating designed and installed the system end to end. Worcester Bosch boiler, Joule high-gain unvented cylinder, Power Tank boost set, Heatmiser controls and underfloor heating throughout. Bathrooms and the kitchen were finished to the same standard as the plant.",
+      "L J Plumbing and Heating Services designed and installed the system end to end. Worcester Bosch boiler, Joule high-gain unvented cylinder, Power Tank boost set, Heatmiser controls and underfloor heating throughout. Bathrooms and the kitchen were finished to the same standard as the plant.",
     behind:
       "Manifolds, insulated pipework and first-fix runs were set out before screed and finishes. The plant room is the evidence: labelled, insulated, commissioned. That is the work the finished rooms depend on.",
     finish:
@@ -159,7 +159,7 @@ export const schoolWork: {
 } = {
   title: "Schools & Estates",
   line: "Plumbing, heating and refurbishment works for schools and education estates.",
-  body: "From washroom and bathroom refurbishments to plumbing, heating and planned maintenance, LJ Plumbing & Heating supports schools with programmed work, clear communication and dependable delivery.",
+  body: "From washroom and bathroom refurbishments to plumbing, heating and planned maintenance, L J Plumbing and Heating Services supports schools with programmed work, clear communication and dependable delivery.",
   hero: s("04.jpg"),
   card: s("card.jpg"),
   points: [
@@ -203,7 +203,7 @@ export const inHouseSteps = [
   },
   {
     title: "Coordinated delivery",
-    text: "LJ supplies and coordinates the required trades. One company remains accountable through the programme.",
+    text: "L J supplies and coordinates the required trades. One company remains accountable through the programme.",
   },
   {
     title: "Testing, finishing and handover",

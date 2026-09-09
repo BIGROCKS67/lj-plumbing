@@ -53,7 +53,7 @@ export default function PrivacyPage() {
           <h2 className="font-display text-2xl text-ink">Who receives it</h2>
           <p className="mt-3">
             Form submissions are sent to {siteConfig.email} through FormSubmit, a third-party
-            form service. The LJ Plumbing & Heating team reads those messages. We do not
+            form service. The L J Plumbing and Heating Services team reads those messages. We do not
             pass enquiry details to other organisations except where a project requires it
             (for example a coordinated trade) or the law requires it.
           </p>

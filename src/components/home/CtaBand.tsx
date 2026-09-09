@@ -11,7 +11,7 @@ type CtaBandProps = {
 
 export function CtaBand({
   title = "Planning a substantial project?",
-  lede = "Speak to LJ Plumbing & Heating about the property, the scope and the standard you expect.",
+  lede = "Speak to L J Plumbing and Heating Services about the property, the scope and the standard you expect.",
   ctaLabel = "Start a project enquiry",
   ctaHref = "/contact",
 }: CtaBandProps) {

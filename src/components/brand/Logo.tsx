@@ -28,7 +28,7 @@ export function Logo({ size = "md", onDark = false, className, linked = true }: 
   const classes = cn("inline-flex items-center touch-manipulation", className);
   if (!linked) return <div className={classes}>{inner}</div>;
   return (
-    <Link href="/" className={classes} aria-label="L J Plumbing & Heating home">
+    <Link href="/" className={classes} aria-label="L J Plumbing and Heating Services home">
       {inner}
     </Link>
   );

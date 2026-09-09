@@ -1,6 +1,11 @@
 import { asset } from "@/lib/utils";
 
-export type NavChild = { label: string; href: string };
+export type NavChild = {
+  label: string;
+  href: string;
+  image?: string;
+  line?: string;
+};
 
 export type NavItem = {
   label: string;
@@ -10,10 +15,10 @@ export type NavItem = {
 
 export const siteConfig = {
   name: "L J Plumbing & Heating Services Ltd",
-  shortName: "LJ Plumbing & Heating",
+  shortName: "L J Plumbing and Heating Services",
   tagline: "Complete plumbing, heating and renovation projects, delivered without compromise.",
   description:
-    "LJ Plumbing & Heating delivers complete bathroom and home renovations, complex plumbing and heating systems, and planned works for schools and estates. Banbury and the surrounding counties.",
+    "L J Plumbing and Heating Services delivers complete bathroom and home renovations, complex plumbing and heating systems, and planned works for schools and estates. Banbury and the surrounding counties.",
   url: "https://ljplumbheat.co.uk",
   phone: "07540 495667",
   email: "info@ljplumbheat.co.uk",
@@ -43,17 +48,40 @@ export const siteConfig = {
     lat: 52.0123,
     lng: -1.2915,
     radiusM: 36000,
-    label: "LJ Plumbing & Heating, Adderbury",
+    label: "L J Plumbing and Heating Services, Adderbury",
   },
   sister: {
     name: "SMH Gas Specialist",
     url: "/smh-gas-specialist",
     handoverUrl: "https://www.smh-gas-specialist.co.uk",
-    line: "SMH Gas Specialist is now part of LJ Plumbing & Heating. Existing SMH customers remain fully supported.",
+    line: "SMH Gas Specialist is now part of L J Plumbing and Heating Services. Existing SMH customers remain fully supported.",
   },
   nav: [
     { label: "Renovations", href: "/renovations" },
-    { label: "Bathrooms", href: "/bathrooms" },
+    {
+      label: "Bathrooms",
+      href: "/bathrooms",
+      children: [
+        {
+          label: "All bathrooms",
+          href: "/bathrooms",
+          image: asset("/images/projects/woodstock/01.jpg"),
+          line: "Complete bathrooms and wet rooms",
+        },
+        {
+          label: "Woodstock",
+          href: "/projects/woodstock",
+          image: asset("/images/projects/woodstock/card.jpg"),
+          line: "Five bathrooms, one project",
+        },
+        {
+          label: "Turweston House",
+          href: "/projects/turweston",
+          image: asset("/images/projects/turweston/01.jpg"),
+          line: "Listed-building bathrooms",
+        },
+      ],
+    },
     { label: "Plumbing & Heating", href: "/heating" },
     { label: "Servicing", href: "/servicing" },
     {
@@ -80,9 +108,9 @@ export const badges = [
 ] as const;
 
 export const proofStrip = [
-  "Gas Safe registered",
-  "OFTEC registered",
   "Complete project delivery",
   "Required trades supplied and coordinated",
   "Residential, education and estate work",
+  "From first meeting to handover",
+  "Banbury and the surrounding counties",
 ] as const;

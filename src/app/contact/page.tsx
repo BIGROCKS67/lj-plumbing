@@ -5,7 +5,7 @@ import { images } from "@/data/images";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Call L J Plumbing & Heating on 07540 495667 or email info@ljplumbheat.co.uk.",
+  description: "Call L J Plumbing and Heating Services on 07540 495667 or email info@ljplumbheat.co.uk.",
 };
 
 export default function ContactPage() {

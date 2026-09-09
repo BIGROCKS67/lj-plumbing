@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { premierProjects } from "@/data/projects";
 import type { ServicePageDetail } from "@/data/servicePages";
@@ -32,6 +33,15 @@ export function ServiceDepth({ detail, enquiryLabel }: ServiceDepthProps) {
             <div className="mt-6 grid gap-8 sm:grid-cols-2">
               {related.map((p) => (
                 <Link key={p.slug} href={`/projects/${p.slug}`} className="group block">
+                  <div className="relative mb-4 aspect-[3/2] overflow-hidden bg-ink">
+                    <Image
+                      src={p.card}
+                      alt={p.title}
+                      fill
+                      className="object-cover transition duration-500 group-hover:scale-[1.03]"
+                      sizes="(min-width: 640px) 40vw, 100vw"
+                    />
+                  </div>
                   <p className="font-display text-3xl text-ink group-hover:text-ice-deep">{p.title}</p>
                   <p className="mt-2 text-sm text-mute">{p.line}</p>
                 </Link>

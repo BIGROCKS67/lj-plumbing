@@ -85,7 +85,7 @@ export function CoverageMap() {
       ref={el}
       className="lj-coverage-map h-[22rem] w-full bg-paper sm:h-[28rem] lg:h-[36rem]"
       role="img"
-      aria-label="Map showing LJ Plumbing & Heating based in Adderbury, with a coverage circle across Banbury and the surrounding counties."
+      aria-label="Map showing L J Plumbing and Heating Services based in Adderbury, with a coverage circle across Banbury and the surrounding counties."
     />
   );
 }

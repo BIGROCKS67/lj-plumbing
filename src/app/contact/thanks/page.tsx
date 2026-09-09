@@ -5,7 +5,7 @@ import { telHref } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Enquiry sent",
-  description: "Your enquiry has been sent to the LJ Plumbing & Heating team.",
+  description: "Your enquiry has been sent to the L J Plumbing and Heating Services team.",
 };
 
 export default function ThanksPage() {
@@ -14,7 +14,7 @@ export default function ThanksPage() {
       <p className="text-sm font-semibold text-ice-deep">Contact</p>
       <h1 className="font-display mt-3 text-4xl text-ink sm:text-5xl">Thank you.</h1>
       <p className="mt-6 text-lg text-mute">
-        Your enquiry has been sent directly to the LJ Plumbing & Heating team. We will
+        Your enquiry has been sent directly to the L J Plumbing and Heating Services team. We will
         reply using the details you provided.
       </p>
       <p className="mt-4 text-mute">

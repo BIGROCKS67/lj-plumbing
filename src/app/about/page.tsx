@@ -7,9 +7,9 @@ import { images } from "@/data/images";
 import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "About LJ",
+  title: "About L J",
   description:
-    "LJ Plumbing & Heating delivers complete renovations, complex plumbing and heating, and planned works for schools. Banbury.",
+    "L J Plumbing and Heating Services delivers complete renovations, complex plumbing and heating, and planned works for schools. Banbury.",
 };
 
 export default function AboutPage() {
@@ -17,11 +17,11 @@ export default function AboutPage() {
     <>
       <PageHero
         title="A company built for complete projects."
-        lede="LJ Plumbing & Heating takes responsibility for substantial residential work, complex systems and education estates."
+        lede="L J Plumbing and Heating Services takes responsibility for substantial residential work, complex systems and education estates."
         image={images.shots.vansClose}
-        imageAlt="LJ Plumbing & Heating vans on site"
+        imageAlt="L J Plumbing and Heating Services vans on site"
         imageFocus="object-[center_70%]"
-        eyebrow="About LJ"
+        eyebrow="About L J"
         ctaLabel="Discuss a project"
       />
       <section className="mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8">
