@@ -4,6 +4,39 @@ export type Review = {
   place?: string;
 };
 
+export type GoogleReview = {
+  quote: string;
+  name: string;
+  stars: 5;
+};
+
+export const googleReviews: GoogleReview[] = [
+  {
+    name: "J V",
+    stars: 5,
+    quote:
+      "Very impressed with the service I received from SMH, especially as we are reasonably new home owners and we've found it hard to find reliable tradesmen. I contacted them last week to book in a boiler service and gas check and they replied within the day with their availability and booked me in. They arrived on time and did a thorough job and Mark explained everything and cleaned up before he left. They sent through the certificate and invoice the same day. Excellent service and will definitely use them again next year or if we need any gas works doing in future.",
+  },
+  {
+    name: "Prankit Gupta",
+    stars: 5,
+    quote:
+      "Mark and Steve did a fantastic job removing our old boiler and installing a new PDHW system. They were highly professional throughout the process and were incredibly mindful of our home, leaving everything spotless and clean. Highly recommended!",
+  },
+  {
+    name: "Andrew Roberts",
+    stars: 5,
+    quote:
+      "Mark worked methodically with our heating system to find the likely cause of the fault. He replaced a three-port valve recently installed by another Gas Safe registered plumber and fixed the problem. Thank you Mark, I will be in touch when we need the boiler servicing.",
+  },
+  {
+    name: "D DN",
+    stars: 5,
+    quote:
+      "We have used Mark for a number of years for our boiler servicing and any heating repairs, safety checks etc. We have always been pleased with his work. Well organised and courteous. Would recommend.",
+  },
+];
+
 export const reviews: Review[] = [
   {
     quote:

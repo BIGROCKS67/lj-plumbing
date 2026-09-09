@@ -57,6 +57,14 @@ export const siteConfig = {
     handoverUrl: "https://www.smh-gas-specialist.co.uk",
     line: "SMH Gas Specialist is now part of L J Plumbing and Heating Services. Existing SMH customers remain fully supported.",
   },
+  googleReviews: {
+    listingName: "S M H Gas Specialist",
+    rating: 4.9,
+    count: 48,
+    url: "https://maps.app.goo.gl/uuhLoAUNmbKSPmKq9",
+    cid: "4421845943020009866",
+    featureId: "0x487727c7a1d724e1:0x3d5d8d750d35b98a",
+  },
   nav: [
     { label: "Renovations", href: "/renovations" },
     {
