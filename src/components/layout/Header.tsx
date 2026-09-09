@@ -6,8 +6,16 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { ChevronDown, Menu, Phone, X } from "lucide-react";
 import { Logo } from "@/components/brand/Logo";
-import { siteConfig, type NavItem } from "@/data/site";
+import { siteConfig, type NavChild, type NavItem } from "@/data/site";
 import { cn, telHref } from "@/lib/utils";
+
+function childImage(child: NavChild) {
+  return "image" in child ? child.image : undefined;
+}
+
+function childLine(child: NavChild) {
+  return "line" in child ? child.line : undefined;
+}
 
 export function Header() {
   const pathname = usePathname();
@@ -69,7 +77,7 @@ export function Header() {
                 </button>
                 {openDrop === item.href && (
                   <div className="absolute left-0 top-full pt-3">
-                    {item.children.some((child) => child.image) ? (
+                    {item.children.some((child) => childImage(child)) ? (
                       <div className="grid w-[36rem] grid-cols-3 gap-2 border border-white/10 bg-ink p-3 shadow-xl">
                         {item.children.map((child) => (
                           <Link
@@ -77,10 +85,10 @@ export function Header() {
                             href={child.href}
                             className="group block"
                           >
-                            {child.image && (
+                            {childImage(child) && (
                               <div className="relative aspect-[4/3] overflow-hidden bg-ink-soft">
                                 <Image
-                                  src={child.image}
+                                  src={childImage(child)!}
                                   alt={child.label}
                                   fill
                                   className="object-cover transition duration-500 group-hover:scale-105"
@@ -91,8 +99,8 @@ export function Header() {
                             <p className="mt-2 text-sm font-semibold text-white group-hover:text-ice">
                               {child.label}
                             </p>
-                            {child.line && (
-                              <p className="mt-0.5 text-xs text-white/55">{child.line}</p>
+                            {childLine(child) && (
+                              <p className="mt-0.5 text-xs text-white/55">{childLine(child)}</p>
                             )}
                           </Link>
                         ))}
