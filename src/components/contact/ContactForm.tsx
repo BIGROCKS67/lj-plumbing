@@ -164,7 +164,7 @@ export function ContactFacts({ heading = "Send a project brief." }: { heading?: 
       <p className="text-sm font-semibold text-ice-deep">Get in touch</p>
       <h2 className="font-display mt-3 text-4xl text-ink">{heading}</h2>
       <p className="mt-4 text-mute">
-        Need servicing or already an L J or SMH customer? Call the team directly. For
+        Need servicing or already a customer of L J Plumbing and Heating Services or SMH? Call the team directly. For
         residential projects, schools and estate works, use the enquiry form and select
         the relevant service.
       </p>

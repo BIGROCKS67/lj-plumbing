@@ -22,8 +22,8 @@ export const siteConfig = {
   url: "https://ljplumbheat.co.uk",
   phone: "07540 495667",
   email: "info@ljplumbheat.co.uk",
-  address: "2 Somerville Court, Banbury Business Park, Adderbury, Oxfordshire OX17 3SN",
-  town: "Banbury",
+  address: "Based in Bodicote",
+  town: "Bodicote",
   county: "Oxfordshire",
   instagram: "https://www.instagram.com/lj_plumbheat/",
   instagramHandle: "@lj_plumbheat",
@@ -37,6 +37,7 @@ export const siteConfig = {
   },
   areas: [
     "Banbury",
+    "Bodicote",
     "Adderbury",
     "Bloxham",
     "Woodstock",
@@ -45,10 +46,10 @@ export const siteConfig = {
     "South Northamptonshire",
   ],
   coverage: {
-    lat: 52.0123,
-    lng: -1.2915,
+    lat: 52.0344,
+    lng: -1.3308,
     radiusM: 36000,
-    label: "L J Plumbing and Heating Services, Adderbury",
+    label: "L J Plumbing and Heating Services, Bodicote",
   },
   sister: {
     name: "SMH Gas Specialist",

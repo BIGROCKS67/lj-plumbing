@@ -10,11 +10,10 @@ export function Coverage() {
         <FadeIn>
           <p className="text-sm font-semibold text-ice-deep">Areas we cover</p>
           <h2 className="font-display mt-3 max-w-[16ch] text-4xl text-ink sm:text-5xl">
-            Based in Adderbury. Working across the surrounding counties.
+            Based in Bodicote. Working across the surrounding counties.
           </h2>
           <p className="mt-5 max-w-2xl text-mute">
-            The pin is the office at Banbury Business Park. The circle is the usual
-            working area from that base.
+            The pin is Bodicote. The circle is the usual working area from that base.
           </p>
         </FadeIn>
         <div className="mt-10 overflow-hidden border border-line bg-white">

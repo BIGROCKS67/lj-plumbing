@@ -14,7 +14,7 @@ const points = [
   },
   {
     title: "One accountable company",
-    text: "L J supplies and coordinates what the project requires. Clients should not have to source or manage separate trades.",
+    text: "L J Plumbing and Heating Services supplies and coordinates what the project requires. Clients should not have to source or manage separate trades.",
   },
 ];
 
@@ -23,12 +23,12 @@ export function Why() {
     <section className="bg-white py-16 sm:py-24">
       <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
         <FadeIn>
-          <p className="text-sm font-semibold text-ice-deep">The L J standard</p>
+          <p className="text-sm font-semibold text-ice-deep">The L J Plumbing and Heating Services standard</p>
           <h2 className="font-display mt-3 text-4xl text-ink sm:text-5xl">
             Built around the project, not just the plumbing.
           </h2>
           <p className="mt-5 max-w-md text-mute">
-            Based at {siteConfig.address}.
+            {siteConfig.address}.
           </p>
           <ul className="mt-8 space-y-6">
             {points.map((p) => (

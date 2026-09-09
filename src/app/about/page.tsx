@@ -7,7 +7,7 @@ import { images } from "@/data/images";
 import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "About L J",
+  title: "About L J Plumbing and Heating Services",
   description:
     "L J Plumbing and Heating Services delivers complete renovations, complex plumbing and heating, and planned works for schools. Banbury.",
 };
@@ -21,14 +21,14 @@ export default function AboutPage() {
         image={images.shots.vansClose}
         imageAlt="L J Plumbing and Heating Services vans on site"
         imageFocus="object-[center_70%]"
-        eyebrow="About L J"
+        eyebrow="About L J Plumbing and Heating Services"
         ctaLabel="Discuss a project"
       />
       <section className="mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8">
         <div className="space-y-4 text-lg text-mute">
           <p>
-            {siteConfig.name} (company no. {siteConfig.companyNumber}) is based at{" "}
-            {siteConfig.address}.
+            {siteConfig.name} (company no. {siteConfig.companyNumber}) is based in
+            Bodicote.
           </p>
           <p>
             The company delivers complete bathroom and home renovations, plumbing and
@@ -38,7 +38,7 @@ export default function AboutPage() {
           </p>
           <p>
             Gas Safe {siteConfig.gasSafe}. OFTEC {siteConfig.oftec}. VAT {siteConfig.vat}.
-            The company is based in Adderbury and works across Banbury and the
+            The company is based in Bodicote and works across Banbury and the
             surrounding counties.
           </p>
           <p>

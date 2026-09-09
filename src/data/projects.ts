@@ -203,7 +203,7 @@ export const inHouseSteps = [
   },
   {
     title: "Coordinated delivery",
-    text: "L J supplies and coordinates the required trades. One company remains accountable through the programme.",
+    text: "L J Plumbing and Heating Services supplies and coordinates the required trades. One company remains accountable through the programme.",
   },
   {
     title: "Testing, finishing and handover",

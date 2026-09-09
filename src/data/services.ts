@@ -114,11 +114,11 @@ export const faqs = [
   },
   {
     q: "What areas do you cover?",
-    a: "The company is based in Adderbury, just south of Banbury. The map on the home page shows the usual working area. Unsure whether your property sits inside it? Call.",
+    a: "The company is based in Bodicote, just south of Banbury. The map on the home page shows the usual working area. Unsure whether your property sits inside it? Call.",
   },
   {
     q: "Do you supply the other trades?",
-    a: "L J supplies and coordinates the trades a project requires, and remains accountable through to handover. Ask us what that includes on your brief.",
+    a: "L J Plumbing and Heating Services supplies and coordinates the trades a project requires, and remains accountable through to handover. Ask us what that includes on your brief.",
   },
   {
     q: "Do you work with schools?",

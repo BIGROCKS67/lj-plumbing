@@ -48,7 +48,7 @@ export function CoverageMap() {
 
       const pin = L.divIcon({
         className: "lj-map-pin",
-        html: `<span class="lj-map-pin-dot" aria-hidden="true"></span><span class="lj-map-pin-label">Adderbury</span>`,
+        html: `<span class="lj-map-pin-dot" aria-hidden="true"></span><span class="lj-map-pin-label">Bodicote</span>`,
         iconSize: [18, 18],
         iconAnchor: [9, 9],
       });
@@ -85,7 +85,7 @@ export function CoverageMap() {
       ref={el}
       className="lj-coverage-map h-[22rem] w-full bg-paper sm:h-[28rem] lg:h-[36rem]"
       role="img"
-      aria-label="Map showing L J Plumbing and Heating Services based in Adderbury, with a coverage circle across Banbury and the surrounding counties."
+      aria-label="Map showing L J Plumbing and Heating Services based in Bodicote, with a coverage circle across Banbury and the surrounding counties."
     />
   );
 }

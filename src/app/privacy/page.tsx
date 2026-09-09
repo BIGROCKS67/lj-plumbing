@@ -19,7 +19,7 @@ export default function PrivacyPage() {
           <h2 className="font-display text-2xl text-ink">Who we are</h2>
           <p className="mt-3">
             This website is operated by {siteConfig.name}, company number {siteConfig.companyNumber},
-            VAT {siteConfig.vat}, of {siteConfig.address}.
+            VAT {siteConfig.vat}, based in Bodicote, Oxfordshire.
           </p>
           <p className="mt-3">
             For privacy questions, email{" "}
