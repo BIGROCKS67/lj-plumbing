@@ -19,7 +19,7 @@ export default function SchoolsPage() {
         title={schoolWork.title}
         lede={schoolWork.line}
         image={schoolWork.hero}
-        imageAlt="Completed school washroom at Bishop Loveday Primary School"
+        imageAlt="Refurbished pupil washrooms at Farthinghoe Primary School"
         imageFocus="object-[center_40%]"
         eyebrow="Education"
         ctaLabel="Discuss planned works"
@@ -79,29 +79,36 @@ export default function SchoolsPage() {
           </div>
         </div>
       </section>
-      <section className="bg-paper py-16 sm:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <p className="text-sm font-semibold text-ice-deep">Featured school project</p>
-          <h2 className="font-display mt-3 text-4xl text-ink">{schoolWork.featured.title}</h2>
-          <p className="mt-2 text-sm text-mute">
-            {schoolWork.featured.place}. {schoolWork.featured.period}.
-          </p>
-          <p className="mt-6 max-w-3xl text-lg text-mute">{schoolWork.featured.line}</p>
-          <p className="mt-4 max-w-3xl text-mute">{schoolWork.featured.body}</p>
-          <p className="mt-4 max-w-3xl text-mute">{schoolWork.featured.note}</p>
-          <div className="mt-10 grid items-start gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {schoolWork.shots.map((shot) => (
-              <Photo
-                key={shot.src}
-                src={shot.src}
-                alt={shot.alt}
-                frame={shot.frame}
-                sizes="33vw"
-              />
-            ))}
+      {schoolWork.projects.map((project, index) => (
+        <section
+          key={project.title}
+          className={index % 2 === 0 ? "bg-paper py-16 sm:py-24" : "bg-white py-16 sm:py-24"}
+        >
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <p className="text-sm font-semibold text-ice-deep">
+              {index === 0 ? "Recent school project" : "School project"}
+            </p>
+            <h2 className="font-display mt-3 text-4xl text-ink">{project.title}</h2>
+            <p className="mt-2 text-sm text-mute">
+              {project.place}. {project.period}.
+            </p>
+            <p className="mt-6 max-w-3xl text-lg text-mute">{project.line}</p>
+            <p className="mt-4 max-w-3xl text-mute">{project.body}</p>
+            <p className="mt-4 max-w-3xl text-mute">{project.note}</p>
+            <div className="mt-10 grid items-start gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {project.shots.map((shot) => (
+                <Photo
+                  key={shot.src}
+                  src={shot.src}
+                  alt={shot.alt}
+                  frame={shot.frame}
+                  sizes="33vw"
+                />
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      ))}
       <PageEnd
         ctaLabel="Discuss planned works"
         formHeading="Send the scope and programme."

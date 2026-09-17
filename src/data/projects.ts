@@ -32,6 +32,17 @@ const w = (file: string) => asset(`/images/projects/woodstock/${file}`);
 const t = (file: string) => asset(`/images/projects/turweston/${file}`);
 const b = (file: string) => asset(`/images/projects/bloxham-road/${file}`);
 const s = (file: string) => asset(`/images/projects/bishop-loveday/${file}`);
+const f = (file: string) => asset(`/images/projects/farthinghoe/${file}`);
+
+export type SchoolProject = {
+  title: string;
+  place: string;
+  period: string;
+  line: string;
+  body: string;
+  note: string;
+  shots: ProjectShot[];
+};
 
 export const premierProjects: PremierProject[] = [
   {
@@ -140,6 +151,55 @@ export const premierProjects: PremierProject[] = [
   },
 ];
 
+export const schoolProjects: SchoolProject[] = [
+  {
+    title: "Farthinghoe Primary School",
+    place: "Farthinghoe, Northamptonshire",
+    period: "Completed 2026",
+    line: "A washroom reconfiguration for a village school of around 40 pupils, aged 4 to 11.",
+    body: "This was more than replacing the existing sanitaryware. The space had to work properly for every age group in the school. The former boys’ toilet was decommissioned so the existing girls’ facilities could become a mixed four-cubicle layout. One cubicle was designed as an assisted WC, with grab rails and support arms to improve accessibility. Basins were relocated to give more individual space and fitted with self-closing taps through thermostatic blending valves. Waterproof boxing, dual-flush systems and purpose-made flooring with a sealed upstand were introduced to give a more durable, hygienic finish that is easier for the school to clean and maintain.",
+    note: "The staff WC received the same level of attention, with a new vanity, concealed cistern, flooring and upgraded heating. The work was completed alongside TW Carpentry and J Coates Decorating, with electrical work carried out by JPH.",
+    shots: [
+      { src: f("hero.jpg"), alt: "New mixed cubicles and washbasins at Farthinghoe Primary School", frame: "portrait" },
+      { src: f("03.jpg"), alt: "Relocated washbasins with self-closing taps", frame: "portrait" },
+      { src: f("04.jpg"), alt: "Pupil washroom looking through to the basin run", frame: "portrait" },
+      { src: f("07.jpg"), alt: "Finished cubicle in the mixed four-cubicle layout", frame: "portrait" },
+      { src: f("08.jpg"), alt: "Assisted WC with grab rails and support arms", frame: "portrait" },
+      { src: f("09.jpg"), alt: "Washroom looking toward the corridor", frame: "portrait" },
+      { src: f("05.jpg"), alt: "Basin waste and thermostatic blending valve pipework", frame: "portrait" },
+      { src: f("06.jpg"), alt: "Intamix thermostatic blending valve on the hot water supply", frame: "portrait" },
+      { src: f("10.jpg"), alt: "Refurbished staff WC with concealed cistern and new vanity", frame: "portrait" },
+      { src: f("11.jpg"), alt: "Staff vanity, basin and upgraded heating", frame: "portrait" },
+      { src: f("12.jpg"), alt: "Concealed cistern in the staff WC", frame: "portrait" },
+      { src: f("01.jpg"), alt: "Farthinghoe Primary School", frame: "portrait" },
+      { src: f("02.jpg"), alt: "Farthinghoe School crest", frame: "portrait" },
+      { src: f("13.jpg"), alt: "The previous pupil washroom, before the works", frame: "portrait" },
+      { src: f("14.jpg"), alt: "A previous cubicle, before the works", frame: "portrait" },
+      { src: f("15.jpg"), alt: "The previous staff WC, before the works", frame: "portrait" },
+    ],
+  },
+  {
+    title: "Bishop Loveday Primary School",
+    place: "Bloxham, Oxfordshire",
+    period: "Summer 2025",
+    line: "Four toilet blocks, refurbished over the summer break and handed back for the first day of term.",
+    body: "Old basins were replaced with semi-countertop units that conceal pipework and safety valves. Self-closing pillar taps reduce waste. Toilets were upgraded with fast-filling cisterns and dual flush plates. Waterproof wall boards went into the wet areas. Cubicle doors were renewed in a clean, neutral finish. The rooms were redecorated with J Coates Decorating. New flooring was supplied and fitted by Sherfield Flooring.",
+    note: "The works were carefully programmed across the summer holiday, with materials, access and individual phases coordinated around the school’s requirements. All four washroom areas were completed and handed back ready for the beginning of the new academic year.",
+    shots: [
+      { src: s("hero.jpg"), alt: "Refurbished washbasins at Bishop Loveday", frame: "portrait" },
+      { src: s("01.jpg"), alt: "School washroom", frame: "portrait" },
+      { src: s("02.jpg"), alt: "Toilet cubicles", frame: "portrait" },
+      { src: s("03.jpg"), alt: "Washroom detail", frame: "landscape" },
+      { src: s("04.jpg"), alt: "Finished toilet block", frame: "landscape" },
+      { src: s("05.jpg"), alt: "Basins and taps", frame: "landscape" },
+      { src: s("06.jpg"), alt: "Cubicle doors", frame: "landscape" },
+      { src: s("07.jpg"), alt: "Boys and girls toilet doors", frame: "portrait" },
+      { src: s("08.jpg"), alt: "Washroom finishes", frame: "landscape" },
+      { src: s("09.jpg"), alt: "Flush plates and sanitaryware", frame: "landscape" },
+    ],
+  },
+];
+
 export const schoolWork: {
   title: string;
   line: string;
@@ -147,20 +207,14 @@ export const schoolWork: {
   hero: string;
   card: string;
   points: string[];
-  featured: {
-    title: string;
-    place: string;
-    period: string;
-    line: string;
-    body: string;
-    note: string;
-  };
+  featured: SchoolProject;
   shots: ProjectShot[];
+  projects: SchoolProject[];
 } = {
   title: "Schools & Estates",
   line: "Plumbing, heating and refurbishment works for schools and education estates.",
   body: "From washroom and bathroom refurbishments to plumbing, heating and planned maintenance, L J Plumbing and Heating Services supports schools with programmed work, clear communication and dependable delivery.",
-  hero: s("04.jpg"),
+  hero: f("hero.jpg"),
   card: s("card.jpg"),
   points: [
     "Bathroom, toilet and washroom renovations",
@@ -170,26 +224,14 @@ export const schoolWork: {
     "Refurbishment works with coordinated trades",
     "Programmes planned around holidays, term time and site access",
   ],
-  featured: {
-    title: "Bishop Loveday Primary School",
-    place: "Bloxham, Oxfordshire",
-    period: "Summer 2025",
-    line: "Four toilet blocks, refurbished over the summer break and handed back for the first day of term.",
-    body: "Old basins were replaced with semi-countertop units that conceal pipework and safety valves. Self-closing pillar taps reduce waste. Toilets were upgraded with fast-filling cisterns and dual flush plates. Waterproof wall boards went into the wet areas. Cubicle doors were renewed in a clean, neutral finish. The rooms were redecorated with J Coates Decorating. New flooring was supplied and fitted by Sherfield Flooring.",
-    note: "The works were carefully programmed across the summer holiday, with materials, access and individual phases coordinated around the school’s requirements. All four washroom areas were completed and handed back ready for the beginning of the new academic year.",
-  },
+  featured: schoolProjects[0],
   shots: [
-    { src: s("hero.jpg"), alt: "Refurbished washbasins at Bishop Loveday", frame: "portrait" },
-    { src: s("01.jpg"), alt: "School washroom", frame: "portrait" },
-    { src: s("02.jpg"), alt: "Toilet cubicles", frame: "portrait" },
-    { src: s("03.jpg"), alt: "Washroom detail", frame: "landscape" },
-    { src: s("04.jpg"), alt: "Finished toilet block", frame: "landscape" },
-    { src: s("05.jpg"), alt: "Basins and taps", frame: "landscape" },
-    { src: s("06.jpg"), alt: "Cubicle doors", frame: "landscape" },
-    { src: s("07.jpg"), alt: "Boys and girls toilet doors", frame: "portrait" },
-    { src: s("08.jpg"), alt: "Washroom finishes", frame: "landscape" },
-    { src: s("09.jpg"), alt: "Flush plates and sanitaryware", frame: "landscape" },
+    { src: f("hero.jpg"), alt: "New mixed cubicles at Farthinghoe Primary School", frame: "portrait" },
+    { src: f("03.jpg"), alt: "Relocated washbasins at Farthinghoe Primary School", frame: "portrait" },
+    { src: s("04.jpg"), alt: "Finished toilet block at Bishop Loveday Primary School", frame: "landscape" },
+    { src: s("hero.jpg"), alt: "Refurbished washbasins at Bishop Loveday Primary School", frame: "portrait" },
   ],
+  projects: schoolProjects,
 };
 
 export const inHouseSteps = [
