@@ -102,7 +102,14 @@ export const siteConfig = {
         { label: "Bloxham Road", href: "/projects/bloxham-road" },
       ],
     },
-    { label: "Schools", href: "/schools" },
+    {
+      label: "Schools",
+      href: "/schools",
+      children: [
+        { label: "Bishop Loveday", href: "/schools#bishop-loveday" },
+        { label: "Farthinghoe", href: "/schools#farthinghoe" },
+      ],
+    },
     { label: "About", href: "/about" },
     { label: "Careers", href: "/careers" },
     { label: "Contact", href: "/contact" },

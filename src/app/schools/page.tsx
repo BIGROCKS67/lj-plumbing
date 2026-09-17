@@ -19,7 +19,7 @@ export default function SchoolsPage() {
         title={schoolWork.title}
         lede={schoolWork.line}
         image={schoolWork.hero}
-        imageAlt="Refurbished pupil washrooms at Farthinghoe Primary School"
+        imageAlt="Completed school washroom at Bishop Loveday Primary School"
         imageFocus="object-[center_40%]"
         eyebrow="Education"
         ctaLabel="Discuss planned works"
@@ -81,12 +81,17 @@ export default function SchoolsPage() {
       </section>
       {schoolWork.projects.map((project, index) => (
         <section
-          key={project.title}
-          className={index % 2 === 0 ? "bg-paper py-16 sm:py-24" : "bg-white py-16 sm:py-24"}
+          key={project.slug}
+          id={project.slug}
+          className={
+            index % 2 === 0
+              ? "scroll-mt-36 bg-paper py-16 sm:py-24"
+              : "scroll-mt-36 bg-white py-16 sm:py-24"
+          }
         >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <p className="text-sm font-semibold text-ice-deep">
-              {index === 0 ? "Recent school project" : "School project"}
+              {index === 0 ? "Featured school project" : "School project"}
             </p>
             <h2 className="font-display mt-3 text-4xl text-ink">{project.title}</h2>
             <p className="mt-2 text-sm text-mute">
