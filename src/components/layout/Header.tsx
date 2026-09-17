@@ -38,7 +38,12 @@ export function Header() {
 
   const itemActive = (item: NavItem) =>
     pathname === item.href ||
-    ("children" in item && item.children?.some((child) => pathname === child.href));
+    pathname === `${item.href}/` ||
+    pathname.startsWith(`${item.href}/`) ||
+    ("children" in item &&
+      item.children?.some(
+        (child) => pathname === child.href || pathname.startsWith(`${child.href}/`)
+      ));
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-ink pt-[env(safe-area-inset-top,0px)]">
@@ -136,7 +141,7 @@ export function Header() {
                 href={item.href}
                 className={cn(
                   "whitespace-nowrap text-[13px] font-semibold transition-colors hover:text-ice",
-                  pathname === item.href ? "text-ice" : "text-white/80"
+                  itemActive(item) ? "text-ice" : "text-white/80"
                 )}
               >
                 {item.label}

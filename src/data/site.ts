@@ -104,6 +104,7 @@ export const siteConfig = {
     },
     { label: "Schools", href: "/schools" },
     { label: "About", href: "/about" },
+    { label: "Careers", href: "/careers" },
     { label: "Contact", href: "/contact" },
   ] as const satisfies readonly NavItem[],
 } as const;
