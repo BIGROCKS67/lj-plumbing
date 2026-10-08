@@ -23,7 +23,7 @@ export const services: Service[] = [
       "Protection, sequencing and programme",
       "Technical preparation equal to the finish",
     ],
-    image: images.shots.monoBath,
+    image: images.shots.renovationsCover,
   },
   {
     id: "heating",
@@ -38,6 +38,7 @@ export const services: Service[] = [
       "Radiators, including decorative",
       "Underfloor heating design and install",
       "Plant rooms, cylinders and unvented systems",
+      "Renewable heating, including air source heat pumps",
     ],
     image: images.shots.copper,
   },

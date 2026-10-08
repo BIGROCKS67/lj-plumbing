@@ -91,7 +91,11 @@ export const siteConfig = {
         },
       ],
     },
-    { label: "Plumbing & Heating", href: "/heating" },
+    {
+      label: "Plumbing & Heating",
+      href: "/heating",
+      children: [{ label: "Renewables", href: "/heating#renewables" }],
+    },
     { label: "Servicing", href: "/servicing" },
     {
       label: "Premier Projects",

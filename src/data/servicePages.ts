@@ -75,12 +75,12 @@ export const servicePages: Record<string, ServicePageDetail> = {
   },
   heating: {
     ctaLabel: "Discuss your requirements",
-    imageAlt: "Copper manifolds and plant on a whole-property heating install",
+    imageAlt: "Plant room pipework and expansion vessel",
     projectSlugs: ["bloxham-road", "turweston"],
     sections: [
       {
         title: "What the service includes",
-        text: "Plumbing and heating systems designed around the property. Gas and oil boilers, plant rooms, cylinders, underfloor heating, radiators, zoning, smart controls and the pipework that ties them together.",
+        text: "Plumbing and heating systems designed around the property. Gas and oil boilers, renewable heating, plant rooms, cylinders, underfloor heating, radiators, zoning, smart controls and the pipework that ties them together.",
       },
       {
         title: "How the project is managed",

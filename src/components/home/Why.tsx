@@ -41,8 +41,8 @@ export function Why() {
         </FadeIn>
         <FadeIn delay={0.08} className="relative min-h-[22rem] self-center overflow-hidden bg-ink">
           <Image
-            src={images.shots.yellowBath}
-            alt="Finished principal bathroom by L J Plumbing and Heating Services"
+            src={images.shots.whyBathroom}
+            alt="Finished bathroom with a freestanding bath"
             fill
             className="object-cover object-[center_40%]"
             sizes="(min-width: 1024px) 40vw, 100vw"

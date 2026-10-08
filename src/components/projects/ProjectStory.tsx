@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { PageEnd } from "@/components/ui/PageEnd";
 import { PageHero } from "@/components/ui/PageHero";
-import { Photo } from "@/components/ui/Photo";
+import { PhotoGallery } from "@/components/ui/PhotoGallery";
 import { premierProjects, type PremierProject } from "@/data/projects";
 
 const sections = [
@@ -48,22 +48,7 @@ export function ProjectStory({ project }: { project: PremierProject }) {
           <p className="mt-3 max-w-xl text-mute">
             From first fix and plant to the finished rooms.
           </p>
-          <div className="mt-10 grid items-start gap-5 sm:grid-cols-2">
-            {project.gallery.map((shot) => (
-              <figure key={shot.src} className="bg-white">
-                <Photo
-                  src={shot.src}
-                  alt={shot.alt}
-                  frame={shot.frame}
-                  focus={shot.focus}
-                  sizes="(min-width: 640px) 50vw, 100vw"
-                />
-                {shot.caption && (
-                  <figcaption className="px-4 py-3 text-sm text-mute">{shot.caption}</figcaption>
-                )}
-              </figure>
-            ))}
-          </div>
+          <PhotoGallery shots={project.gallery} />
           <div className="mt-14 flex flex-wrap gap-3">
             <Link
               href="/projects"

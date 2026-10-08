@@ -47,6 +47,36 @@ export default function HeatingPage() {
           />
         </div>
       </section>
+      <section id="renewables" className="scroll-mt-36 bg-white py-16 sm:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <p className="text-sm font-semibold text-ice-deep">Plumbing & Heating</p>
+          <h2 className="font-display mt-3 max-w-[16ch] text-4xl text-ink">Renewables</h2>
+          <div className="mt-6 max-w-3xl space-y-4 text-lg text-mute">
+            <p>
+              L J Plumbing and Heating Services designs and installs renewable heating where it
+              suits the property. An air source heat pump, the cylinder, the emitters and the
+              controls are planned as one system, in the same way as a gas or oil installation.
+            </p>
+            <p>
+              Underfloor heating, radiators and hot water are sized for how the building is used.
+              The plant, pipework and commissioning sit with the same team that delivers the rest
+              of the plumbing and heating.
+            </p>
+          </div>
+          <ul className="mt-8 max-w-3xl space-y-3">
+            {[
+              "Air source heat pumps",
+              "Cylinders and hot water planned for a renewable system",
+              "Underfloor heating and radiators sized for the property",
+              "Controls, commissioning and handover",
+            ].map((item) => (
+              <li key={item} className="border-l-2 border-ice pl-4 text-ink">
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
       <ServiceDepth detail={detail} enquiryLabel={detail.ctaLabel} />
       <PageEnd
         ctaLabel={detail.ctaLabel}

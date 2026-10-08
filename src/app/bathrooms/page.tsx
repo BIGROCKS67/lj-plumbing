@@ -1,11 +1,27 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { ServiceDepth } from "@/components/services/ServiceDepth";
 import { PageEnd } from "@/components/ui/PageEnd";
 import { PageHero } from "@/components/ui/PageHero";
+import { PhotoGallery } from "@/components/ui/PhotoGallery";
 import { images } from "@/data/images";
 import { servicePages } from "@/data/servicePages";
 import { getService } from "@/data/services";
+
+const bathroomShots = [
+  { src: images.bathrooms.finals[0], alt: "Walk-in shower with green tiles", frame: "portrait" as const },
+  { src: images.bathrooms.finals[1], alt: "Double vanity with brass taps", frame: "portrait" as const },
+  { src: images.bathrooms.finals[2], alt: "Bathroom with a high-level cistern", frame: "portrait" as const },
+  { src: images.bathrooms.finals[3], alt: "Freestanding bath", frame: "portrait" as const },
+  { src: images.bathrooms.finals[4], alt: "Vanity and wall-hung sanitaryware", frame: "portrait" as const },
+  { src: images.bathrooms.finals[5], alt: "Freestanding bath and brass taps", frame: "portrait" as const },
+  { src: images.bathrooms.finals[6], alt: "Bathroom under the eaves", frame: "portrait" as const },
+  { src: images.bathrooms.finals[7], alt: "Brass bath taps", frame: "portrait" as const },
+  { src: images.bathrooms.finals[8], alt: "Family bathroom with vanity and bath", frame: "portrait" as const },
+  { src: images.bathrooms.finals[9], alt: "Walk-in shower", frame: "portrait" as const },
+  { src: images.bathrooms.finals[10], alt: "Bath and handheld shower", frame: "portrait" as const },
+  { src: images.bathrooms.finals[11], alt: "Freestanding bath in front of a fireplace", frame: "landscape" as const },
+  { src: images.bathrooms.finals[12], alt: "Freestanding bath and patterned floor", frame: "landscape" as const },
+];
 
 export const metadata: Metadata = {
   title: "Bespoke bathrooms",
@@ -22,61 +38,26 @@ export default function BathroomsPage() {
       <PageHero
         title={s.title}
         lede="Complete bathrooms, considered down to the last detail."
-        image={s.image}
-        imageAlt={detail.imageAlt}
+        image={images.bathrooms.hero}
+        imageAlt="Freestanding bath, patterned floor and walk-in shower"
         eyebrow="Bathrooms"
         ctaLabel={detail.ctaLabel}
       />
-      <section className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8">
-        <div>
-          <p className="text-lg text-mute">{s.body}</p>
-          <ul className="mt-8 space-y-3">
-            {s.points.map((p) => (
-              <li key={p} className="border-l-2 border-ice pl-4 text-ink">
-                {p}
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="grid grid-cols-2 gap-3">
-          <div className="relative aspect-[3/4] overflow-hidden bg-ink">
-            <Image
-              src={images.shots.starEnsuite}
-              alt="Guest en-suite with star-pattern tiles"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="relative mt-8 aspect-[3/4] overflow-hidden bg-ink">
-            <Image
-              src={images.shots.turwestonShower}
-              alt="Finished walk-in shower"
-              fill
-              className="object-cover"
-            />
-          </div>
-        </div>
+      <section className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
+        <p className="text-lg text-mute">{s.body}</p>
+        <ul className="mt-8 space-y-3">
+          {s.points.map((p) => (
+            <li key={p} className="border-l-2 border-ice pl-4 text-ink">
+              {p}
+            </li>
+          ))}
+        </ul>
       </section>
       <section className="bg-paper py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="text-sm font-semibold text-ice-deep">Bathroom work</p>
-          <h2 className="font-display mt-3 max-w-[18ch] text-4xl text-ink">
-            Rooms from Woodstock and Turweston House.
-          </h2>
-          <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              { src: images.shots.yellowBath, alt: "Principal bathroom with yellow bath" },
-              { src: images.shots.monoBath, alt: "Monochrome guest bathroom" },
-              { src: images.shots.starEnsuite, alt: "Guest en-suite with star-pattern tiles" },
-              { src: images.shots.turwestonBath, alt: "Turweston House bathroom" },
-              { src: images.shots.turwestonShower, alt: "Finished walk-in shower" },
-              { src: images.work.bathroom1, alt: "Completed bathroom installation" },
-            ].map((shot) => (
-              <div key={shot.src} className="relative aspect-[4/3] overflow-hidden bg-ink">
-                <Image src={shot.src} alt={shot.alt} fill className="object-cover" sizes="(min-width: 1024px) 33vw, 50vw" />
-              </div>
-            ))}
-          </div>
+          <h2 className="font-display mt-3 max-w-[18ch] text-4xl text-ink">Completed bathrooms.</h2>
+          <PhotoGallery shots={bathroomShots} />
         </div>
       </section>
       <ServiceDepth detail={detail} enquiryLabel={detail.ctaLabel} />

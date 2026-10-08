@@ -3,6 +3,7 @@ import Link from "next/link";
 import { PageEnd } from "@/components/ui/PageEnd";
 import { PageHero } from "@/components/ui/PageHero";
 import { Photo } from "@/components/ui/Photo";
+import { PhotoGallery } from "@/components/ui/PhotoGallery";
 import { schoolWork } from "@/data/projects";
 import { schoolAssurance } from "@/data/servicePages";
 
@@ -19,7 +20,7 @@ export default function SchoolsPage() {
         title={schoolWork.title}
         lede={schoolWork.line}
         image={schoolWork.hero}
-        imageAlt="Completed school washroom at Bishop Loveday Primary School"
+        imageAlt="Refurbished pupil washrooms at Farthinghoe Primary School"
         imageFocus="object-[center_40%]"
         eyebrow="Education"
         ctaLabel="Discuss planned works"
@@ -100,17 +101,7 @@ export default function SchoolsPage() {
             <p className="mt-6 max-w-3xl text-lg text-mute">{project.line}</p>
             <p className="mt-4 max-w-3xl text-mute">{project.body}</p>
             <p className="mt-4 max-w-3xl text-mute">{project.note}</p>
-            <div className="mt-10 grid items-start gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {project.shots.map((shot) => (
-                <Photo
-                  key={shot.src}
-                  src={shot.src}
-                  alt={shot.alt}
-                  frame={shot.frame}
-                  sizes="33vw"
-                />
-              ))}
-            </div>
+            <PhotoGallery shots={project.shots} />
           </div>
         </section>
       ))}

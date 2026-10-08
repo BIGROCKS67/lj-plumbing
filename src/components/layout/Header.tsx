@@ -63,14 +63,14 @@ export function Header() {
             "children" in item && item.children ? (
               <div
                 key={item.href}
-                className="relative"
+                className="relative flex items-center"
                 onMouseEnter={() => setOpenDrop(item.href)}
                 onMouseLeave={() => setOpenDrop(null)}
               >
                 <button
                   type="button"
                   className={cn(
-                    "inline-flex items-center gap-1 text-[13px] font-semibold transition-colors hover:text-ice",
+                    "inline-flex h-10 items-center gap-1 text-[13px] font-semibold leading-none transition-colors hover:text-ice",
                     itemActive(item) ? "text-ice" : "text-white/80"
                   )}
                   aria-expanded={openDrop === item.href}
@@ -140,7 +140,7 @@ export function Header() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "whitespace-nowrap text-[13px] font-semibold transition-colors hover:text-ice",
+                  "inline-flex h-10 items-center whitespace-nowrap text-[13px] font-semibold leading-none transition-colors hover:text-ice",
                   itemActive(item) ? "text-ice" : "text-white/80"
                 )}
               >

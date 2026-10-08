@@ -31,9 +31,11 @@ export function ServicesGrid() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/35 to-transparent" />
                 </div>
-                <div className="absolute inset-x-0 bottom-0 p-5 sm:p-7">
-                  <h3 className="font-display text-3xl text-white sm:text-4xl">{s.title}</h3>
-                  <p className="mt-2 max-w-md text-sm text-white/75">{s.line}</p>
+                <div className="absolute inset-x-0 bottom-0 flex flex-col justify-end p-5 sm:p-7">
+                  <h3 className="font-display flex min-h-[2.15em] items-end text-3xl leading-none text-white sm:text-4xl">
+                    {s.title}
+                  </h3>
+                  <p className="mt-2 min-h-10 max-w-md text-sm leading-5 text-white/75">{s.line}</p>
                 </div>
               </Link>
             </FadeIn>
