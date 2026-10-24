@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/projects/turweston/",
     "/projects/bloxham-road/",
     "/schools/",
+    "/community/",
     "/about/",
     "/careers/",
     "/careers/administration-assistant-pa/",

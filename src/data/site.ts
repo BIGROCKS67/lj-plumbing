@@ -114,6 +114,7 @@ export const siteConfig = {
         { label: "Farthinghoe", href: "/schools#farthinghoe" },
       ],
     },
+    { label: "Community", href: "/community" },
     { label: "About", href: "/about" },
     { label: "Careers", href: "/careers" },
     { label: "Contact", href: "/contact" },

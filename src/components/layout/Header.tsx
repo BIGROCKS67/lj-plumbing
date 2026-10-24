@@ -58,19 +58,19 @@ export function Header() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-3 px-4 sm:h-[4.25rem] sm:px-6 lg:px-8">
         <Logo size="md" onDark />
 
-        <nav className="hidden items-center gap-2.5 xl:flex 2xl:gap-4" aria-label="Main">
+        <nav className="hidden items-center gap-1.5 xl:flex 2xl:gap-3.5" aria-label="Main">
           {siteConfig.nav.map((item) =>
             "children" in item && item.children ? (
               <div
                 key={item.href}
-                className="relative flex items-center"
+                className="relative flex shrink-0 items-center"
                 onMouseEnter={() => setOpenDrop(item.href)}
                 onMouseLeave={() => setOpenDrop(null)}
               >
                 <button
                   type="button"
                   className={cn(
-                    "inline-flex h-10 items-center gap-1 text-[13px] font-semibold leading-none transition-colors hover:text-ice",
+                    "inline-flex h-10 shrink-0 items-center gap-1 whitespace-nowrap text-[13px] font-semibold leading-none transition-colors hover:text-ice",
                     itemActive(item) ? "text-ice" : "text-white/80"
                   )}
                   aria-expanded={openDrop === item.href}
@@ -140,7 +140,7 @@ export function Header() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "inline-flex h-10 items-center whitespace-nowrap text-[13px] font-semibold leading-none transition-colors hover:text-ice",
+                  "inline-flex h-10 shrink-0 items-center whitespace-nowrap text-[13px] font-semibold leading-none transition-colors hover:text-ice",
                   itemActive(item) ? "text-ice" : "text-white/80"
                 )}
               >
@@ -150,10 +150,10 @@ export function Header() {
           )}
         </nav>
 
-        <div className="hidden items-center gap-3 xl:flex 2xl:gap-4">
+        <div className="hidden shrink-0 items-center gap-2 xl:flex 2xl:gap-4">
           <a
             href={telHref(siteConfig.phone)}
-            className="text-sm font-medium text-white/80 hover:text-white"
+            className="whitespace-nowrap text-sm font-medium text-white/80 hover:text-white"
           >
             {siteConfig.phone}
           </a>
