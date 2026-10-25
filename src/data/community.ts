@@ -27,8 +27,8 @@ export const communityStories: CommunityStory[] = [
     body: "We’re proud to sponsor Easington Sports FC’s under-7s, with the L J Plumbing name on the team’s shirts. Grassroots football gives children the opportunity to build confidence, develop friendships and enjoy being part of a team. We’re delighted to support those first steps on the pitch.",
     shots: [
       {
-        src: asset("/images/community/football-shirt.jpg"),
-        alt: "Easington Sports FC shirt sponsored by L J Plumbing and Heating Services",
+        src: asset("/images/community/football-luke-team.jpg"),
+        alt: "Luke with the Easington Sports FC under-7s",
         frame: "square",
       },
       {

@@ -17,9 +17,9 @@ export default function CommunityPage() {
       <PageHero
         title={communityIntro.title}
         lede={communityIntro.lede}
-        image={asset("/images/community/tractor.jpg")}
-        imageAlt="Sponsored tractor on the Banbury Christmas Tractor Run"
-        imageFocus="object-[center_35%]"
+        image={asset("/images/community/football-shirt.jpg")}
+        imageAlt="Easington Sports FC shirt sponsored by L J Plumbing and Heating Services"
+        imageFocus="object-[center_78%] md:object-[center_62%]"
         eyebrow="Community"
         ctaLabel="Our community involvement"
         ctaHref="#easington"
