@@ -21,7 +21,7 @@ export default function CommunityPage() {
         imageAlt="Sponsored tractor on the Banbury Christmas Tractor Run"
         imageFocus="object-[center_35%]"
         eyebrow="Community"
-        ctaLabel="See the local work"
+        ctaLabel="Our community involvement"
         ctaHref="#easington"
       />
       <section className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
@@ -38,10 +38,8 @@ export default function CommunityPage() {
           }
         >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <p className="text-sm font-semibold text-ice-deep">{story.place}</p>
-            <h2 className="font-display mt-3 text-4xl text-ink">{story.title}</h2>
-            <p className="mt-6 max-w-3xl text-lg text-mute">{story.line}</p>
-            <p className="mt-4 max-w-3xl text-mute">{story.body}</p>
+            <h2 className="font-display text-4xl text-ink">{story.title}</h2>
+            <p className="mt-6 max-w-3xl text-lg text-mute">{story.body}</p>
             <div
               className={
                 story.shots.length > 1
