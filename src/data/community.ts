@@ -23,17 +23,17 @@ export const communityIntro = {
 export const communityStories: CommunityStory[] = [
   {
     id: "easington",
-    title: "Easington Sports FC Under-7s",
-    body: "We’re proud to sponsor Easington Sports FC’s under-7s, with the L J Plumbing name on the team’s shirts. Grassroots football gives children the opportunity to build confidence, develop friendships and enjoy being part of a team. We’re delighted to support those first steps on the pitch.",
+    title: "Easington Sports FC Under-8s",
+    body: "We’re proud to sponsor Easington Sports FC, with the L J Plumbing name on the team’s shirts. The side we first backed as under-7s is now under-8s. Grassroots football gives children the opportunity to build confidence, develop friendships and enjoy being part of a team. We’re delighted to keep supporting them on the pitch.",
     shots: [
       {
         src: asset("/images/community/football-luke-team.jpg"),
-        alt: "Luke with the Easington Sports FC under-7s",
+        alt: "Luke with the Easington Sports FC team",
         frame: "square",
       },
       {
         src: asset("/images/community/football-team.jpg"),
-        alt: "Easington Sports FC under-7s with their coach",
+        alt: "Easington Sports FC team with their coach",
         frame: "square",
       },
     ],
@@ -97,6 +97,11 @@ export const communityStories: CommunityStory[] = [
       {
         src: asset("/images/community/golf.jpg"),
         alt: "Hole 2 tee sign at Feldon Valley, sponsored by L J Plumbing and Heating Services",
+        frame: "portrait",
+      },
+      {
+        src: asset("/images/community/golf-sign.jpg"),
+        alt: "Feldon Valley hole 2 scorecard and the L J Plumbing sponsor panel",
         frame: "portrait",
       },
     ],
