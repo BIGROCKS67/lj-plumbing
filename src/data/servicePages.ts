@@ -13,7 +13,7 @@ export type ServicePageDetail = {
 export const servicePages: Record<string, ServicePageDetail> = {
   renovations: {
     ctaLabel: "Discuss a renovation",
-    imageAlt: "Completed bathroom on a full renovation",
+    imageAlt: "Bloxham Road during the build and after completion",
     projectSlugs: ["woodstock", "turweston"],
     sections: [
       {

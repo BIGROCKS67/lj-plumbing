@@ -86,7 +86,7 @@ export const siteConfig = {
         {
           label: "Turweston House",
           href: "/projects/turweston",
-          image: asset("/images/projects/turweston/01.jpg"),
+          image: asset("/images/projects/turweston/hero.jpg"),
           line: "Listed-building bathrooms",
         },
       ],

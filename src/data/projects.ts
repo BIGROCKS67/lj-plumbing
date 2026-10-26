@@ -24,6 +24,7 @@ export type PremierProject = {
   finish: string;
   hero: string;
   card: string;
+  heroAlt?: string;
   heroFocus?: string;
   gallery: ProjectShot[];
 };
@@ -98,22 +99,23 @@ export const premierProjects: PremierProject[] = [
       "Pipe runs, frames and plant were set out to protect the building. First-fix work is neat because the second fix has nowhere to hide on a listed job. Testing and commissioning happened before handover.",
     finish:
       "Geometric star tiling, under-bath lighting, sculptural basins, wall-mounted copper fittings and a freestanding bath. Deep green boarding, brass towel rails and charcoal column radiators carry the same standard into the rest of the house.",
-    hero: t("hero.jpg"),
+    hero: t("vans.jpg"),
     card: t("card.jpg"),
-    heroFocus: "object-[center_55%]",
+    heroAlt: "L J Plumbing and Heating Services at Turweston House",
+    heroFocus: "object-center md:object-[88%_center]",
     gallery: [
       { src: t("hero.jpg"), alt: "Finished bathroom at Turweston House", caption: "Completed bathroom", frame: "portrait" },
-      { src: t("01.jpg"), alt: "Freestanding bath and copper fittings", caption: "Freestanding bath", frame: "portrait" },
-      { src: t("02.jpg"), alt: "Geometric tiling and walk-in shower", caption: "Shower and tiling", frame: "portrait" },
-      { src: t("11.jpg"), alt: "Stone-effect basins and copper taps", caption: "Basins", frame: "portrait" },
-      { src: t("l9.jpg"), alt: "Finished hallway with a column radiator", caption: "Finish", frame: "portrait" },
-      { src: t("04.jpg"), alt: "Column radiator against period joinery", caption: "Heating", frame: "portrait" },
-      { src: t("10.jpg"), alt: "Bedroom heating", caption: "Bedroom", frame: "portrait" },
-      { src: t("06.jpg"), alt: "Bathroom services", caption: "Bathroom", frame: "portrait" },
-      { src: t("07.jpg"), alt: "Heating first fix", caption: "Heating", frame: "portrait" },
+      { src: t("bathroom.jpg"), alt: "Freestanding bath, basin and heated towel rails", caption: "Bathroom", frame: "portrait" },
+      { src: t("basins.jpg"), alt: "Marble basins and copper taps", caption: "Basins", frame: "portrait" },
+      { src: t("cylinder.jpg"), alt: "Hot water cylinder", caption: "Hot water cylinder", frame: "portrait" },
       { src: t("09.jpg"), alt: "Heating controls", caption: "Controls", frame: "portrait" },
-      { src: t("03.jpg"), alt: "Brass towel rail", caption: "Brass towel rail", frame: "landscape" },
-      { src: t("05.jpg"), alt: "Plant room and pipework", caption: "Plant room", frame: "landscape" },
+      { src: t("plant-insulated.jpg"), alt: "Insulated pipework in the plant room", caption: "Plant room insulated", frame: "landscape" },
+      { src: t("plant-room.jpg"), alt: "Plant room with cylinders and boost tank", caption: "Plant room", frame: "landscape" },
+      { src: t("radiator-hall.jpg"), alt: "Column radiator in the hallway", caption: "Bespoke radiators", frame: "portrait" },
+      { src: t("radiator-attic.jpg"), alt: "Column radiator under the eaves", caption: "Bespoke radiators", frame: "portrait" },
+      { src: t("04.jpg"), alt: "Column radiator against period joinery", caption: "Bespoke radiators", frame: "portrait" },
+      { src: t("10.jpg"), alt: "Bedroom heating", caption: "Bedroom", frame: "portrait" },
+      { src: t("bedroom.jpg"), alt: "Bedroom with a column radiator", caption: "Bedroom", frame: "portrait" },
     ],
   },
   {
@@ -133,20 +135,34 @@ export const premierProjects: PremierProject[] = [
       "Manifolds, insulated pipework and first-fix runs were set out before screed and finishes. The plant room is the evidence: labelled, insulated, commissioned. That is the work the finished rooms depend on.",
     finish:
       "Walk-in showers, freestanding baths, floating vanities, a modern kitchen and a house that heats evenly. From the driveway at dusk the property reads as complete. Inside, the same standard holds behind the walls.",
-    hero: b("l7.jpg"),
+    hero: b("l8.jpg"),
     card: b("card.jpg"),
+    heroAlt: "The finished house on Bloxham Road",
     heroFocus: "object-center",
     gallery: [
-      { src: b("l7.jpg"), alt: "Bloxham Road during the build", caption: "The site", frame: "landscape" },
       { src: b("l8.jpg"), alt: "Front of the finished house", caption: "Completed house", frame: "landscape" },
-      { src: b("01.jpg"), alt: "Freestanding bath", caption: "Bathroom", frame: "landscape" },
-      { src: b("03.jpg"), alt: "Floating vanity", caption: "Bathroom", frame: "landscape" },
+      { src: b("staircase.jpg"), alt: "Oak staircase", caption: "Staircase", frame: "landscape" },
+      { src: b("01.jpg"), alt: "Freestanding bath", caption: "Main bathroom", frame: "landscape" },
+      { src: b("ensuite.jpg"), alt: "Master en-suite with bath and shower", caption: "Master en-suite", frame: "landscape" },
       { src: b("04.jpg"), alt: "Kitchen installation", caption: "Kitchen", frame: "landscape" },
-      { src: b("06.jpg"), alt: "Cylinder and pipework", caption: "Plant", frame: "landscape" },
-      { src: b("l5.jpg"), alt: "Heating manifolds", caption: "Manifolds", frame: "landscape" },
+      { src: b("kitchen-sink.jpg"), alt: "Kitchen sink and tap", caption: "Kitchen", frame: "landscape" },
+      { src: b("cloakroom.jpg"), alt: "Cloakroom with basin and WC", caption: "Cloakroom", frame: "landscape" },
+      { src: b("cloakroom-basin.jpg"), alt: "Cloakroom basin", caption: "Cloakroom", frame: "landscape" },
+      { src: b("06.jpg"), alt: "Plant room cylinder and pipework", caption: "Plant room", frame: "landscape" },
+      { src: b("boosted.jpg"), alt: "Boosted cold water tanks", caption: "Boosted water", frame: "landscape" },
+      { src: b("manifold.jpg"), alt: "Underfloor heating manifold", caption: "Underfloor manifold", frame: "landscape" },
+      {
+        src: b("ufh.jpg"),
+        alt: "Underfloor heating pipes before screed",
+        caption: "Underfloor heating",
+        frame: "landscape",
+        focus: "object-[center_68%]",
+      },
+      { src: b("first-fix-wall.jpg"), alt: "First-fix pipework in the stud wall", caption: "First fix", frame: "landscape" },
       { src: b("l6.jpg"), alt: "First-fix pipework", caption: "First fix", frame: "landscape" },
-      { src: b("02.jpg"), alt: "Walk-in shower", caption: "Shower", frame: "portrait" },
-      { src: b("l4.jpg"), alt: "Underfloor heating", caption: "Underfloor heating", frame: "portrait" },
+      { src: b("radiator-panel.jpg"), alt: "Panel radiator", caption: "Radiators", frame: "portrait" },
+      { src: b("radiator-column.jpg"), alt: "Vertical radiator", caption: "Radiators", frame: "portrait" },
+      { src: b("wet-room.jpg"), alt: "Wet room with basin and WC", caption: "Wet room", frame: "portrait" },
     ],
   },
 ];

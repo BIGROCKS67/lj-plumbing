@@ -21,7 +21,7 @@ export function ProjectStory({ project }: { project: PremierProject }) {
         title={project.title}
         lede={project.line}
         image={project.hero}
-        imageAlt={project.gallery[0]?.alt ?? project.title}
+        imageAlt={project.heroAlt ?? project.gallery[0]?.alt ?? project.title}
         imageFocus={project.heroFocus}
         eyebrow="Premier Projects"
         ctaLabel="Discuss a project"

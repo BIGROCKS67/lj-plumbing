@@ -23,7 +23,7 @@ export const services: Service[] = [
       "Protection, sequencing and programme",
       "Technical preparation equal to the finish",
     ],
-    image: images.shots.renovationsCover,
+    image: images.shots.renovationsComplete,
   },
   {
     id: "heating",

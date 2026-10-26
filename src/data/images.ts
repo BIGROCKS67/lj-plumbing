@@ -37,7 +37,8 @@ export const images = {
     vansClose: asset("/images/work/kit.jpg"),
     plantRoom: asset("/images/work/van-detail.jpg"),
     copper: asset("/images/services/heating-cover.jpg"),
-    renovationsCover: asset("/images/services/renovations-cover.jpg"),
+    renovationsBuild: asset("/images/services/renovations-build.jpg"),
+    renovationsComplete: asset("/images/projects/bloxham-road/l8.jpg"),
     whyBathroom: asset("/images/home/lj1.jpg"),
     cylinder: asset("/images/projects/woodstock/07.jpg"),
     firstFix: asset("/images/projects/woodstock/09.jpg"),
@@ -46,8 +47,6 @@ export const images = {
     monoBath: asset("/images/projects/woodstock/02.jpg"),
     schoolWashroom: asset("/images/projects/bishop-loveday/04.jpg"),
     starEnsuite: asset("/images/projects/woodstock/03.jpg"),
-    turwestonBath: asset("/images/projects/turweston/01.jpg"),
-    turwestonShower: asset("/images/projects/turweston/02.jpg"),
     oilBoiler: asset("/images/work/boiler.jpg"),
   },
   projects: {
